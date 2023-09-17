@@ -1,0 +1,58 @@
+﻿@attribute [Authorize]
+@inject DialogService DialogService
+
+<RadzenTemplateForm TItem="DailyStatus" Data="@model" Submit=@OnSubmit>
+    <div class="row" style="margin-bottom: 16px">
+        <div class="col-md-3">
+            <RadzenLabel Text="Va a Lavoro" />
+        </div>
+        <div class="col">
+            <RadzenSelectBar @bind-Value=@model.GotoWork TValue="bool" class="mb-5">
+                <Items>
+                    <RadzenSelectBarItem Text="Si" Value="true" />
+                    <RadzenSelectBarItem Text="No" Value="false" />
+                </Items>
+            </RadzenSelectBar>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 16px">
+        <div class="col-md-3">
+            <RadzenLabel Text="Data" />
+        </div>
+        <div class="col">
+            <RadzenDatePicker @bind-Value="@model.Date" Name="Date" ShowTime="false" />
+            <RadzenRequiredValidator Text="Data obbligatoria" Component="Date" />
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 16px">
+        <div class="col-md-3">
+            <RadzenLabel Text="Text" />
+        </div>
+        <div class="col">
+            <RadzenTextBox @bind-Value="@model.Note" Name="Text" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col">
+            <RadzenButton ButtonType="ButtonType.Submit" Text="Save" />
+        </div>
+    </div>
+</RadzenTemplateForm>
+@code {
+    [Parameter]
+    public DateTime Date { get; set; }
+
+    DailyStatus model = new DailyStatus();
+
+    protected override void OnParametersSet()
+    {
+        model.Date = Date;
+        model.Modify = DateTime.Now;
+    }
+
+    void OnSubmit(DailyStatus model)
+    {
+        DialogService.Close(model);
+    }
+}

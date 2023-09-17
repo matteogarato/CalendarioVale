@@ -1,0 +1,1 @@
+hcidump [-i hciX] [--save-dump=<file>]
