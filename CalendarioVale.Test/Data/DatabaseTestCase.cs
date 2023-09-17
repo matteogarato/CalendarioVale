@@ -11,7 +11,7 @@ namespace CalendarioVale.Test.Data
         public DatabaseTestCase()
         {
             var optionsBuilder = new DbContextOptionsBuilder();
-            optionsBuilder.UseNpgsql($"Host=192.168.14.108;Database=my_db_test_{Guid.NewGuid().ToString().Replace("-", "")};User ID=postgres;password=97531zzZ#");
+            optionsBuilder.UseNpgsql($"Host=localhost;Database=my_db_test_{Guid.NewGuid().ToString().Replace("-", "")};User ID=postgres;password=postgres");
 
             // Create an instance of your application's DbContext
             DbContext = new ApplicationDbContext(optionsBuilder.Options);
