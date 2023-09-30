@@ -7570,32 +7570,34 @@
     ]
   },
   "packageFolders": {
-    "/home/matteo/.nuget/packages/": {}
+    "C:\\Users\\garat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/matteo/Documents/CalendarioVale/CalendarioVale.Test/CalendarioVale.Test.csproj",
+      "projectUniqueName": "C:\\Users\\garat\\Documents\\Repository\\CalendarioVale\\CalendarioVale.Test\\CalendarioVale.Test.csproj",
       "projectName": "CalendarioVale.Test",
-      "projectPath": "/home/matteo/Documents/CalendarioVale/CalendarioVale.Test/CalendarioVale.Test.csproj",
-      "packagesPath": "/home/matteo/.nuget/packages/",
-      "outputPath": "/home/matteo/Documents/CalendarioVale/CalendarioVale.Test/obj/",
+      "projectPath": "C:\\Users\\garat\\Documents\\Repository\\CalendarioVale\\CalendarioVale.Test\\CalendarioVale.Test.csproj",
+      "packagesPath": "C:\\Users\\garat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\garat\\Documents\\Repository\\CalendarioVale\\CalendarioVale.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/matteo/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\garat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/matteo/Documents/CalendarioVale/CalendarioVale/CalendarioVale.csproj": {
-              "projectPath": "/home/matteo/Documents/CalendarioVale/CalendarioVale/CalendarioVale.csproj"
+            "C:\\Users\\garat\\Documents\\Repository\\CalendarioVale\\CalendarioVale\\CalendarioVale.csproj": {
+              "projectPath": "C:\\Users\\garat\\Documents\\Repository\\CalendarioVale\\CalendarioVale\\CalendarioVale.csproj"
             }
           }
         }
@@ -7651,7 +7653,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

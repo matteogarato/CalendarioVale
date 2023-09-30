@@ -1,5 +1,4 @@
-﻿using System.Xml.Linq;
-using CalendarioVale.Data.Model;
+﻿using CalendarioVale.Data.Model;
 using CalendarioVale.Data.Reposotory;
 using Microsoft.EntityFrameworkCore;
 
@@ -38,6 +37,7 @@ namespace CalendarioVale.Services
         {
             await _statusRepository.Save(toSave);
         }
+
         public async Task AddBiometrics(Biometrics bio, DateTime date)
         {
             var d = await GetByDate(date);
@@ -49,6 +49,7 @@ namespace CalendarioVale.Services
                 await Save(d);
             }
         }
+
         public async Task DeleteBiometrics(string bioId, DateTime date)
         {
             var d = await GetByDate(date);

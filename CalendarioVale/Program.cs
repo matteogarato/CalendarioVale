@@ -46,7 +46,7 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddScoped<IDailyStatusService, DailyStatusService>();
 builder.Services.AddScoped<IDailyStatusRepository, DailyStatusRepository>();
-builder.Services.AddControllers().PartManager.ApplicationParts.Add(new AssemblyPart(typeof(BiometricsController).Assembly));;
+builder.Services.AddControllers().PartManager.ApplicationParts.Add(new AssemblyPart(typeof(BiometricsController).Assembly)); ;
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

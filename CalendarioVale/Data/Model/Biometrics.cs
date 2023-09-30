@@ -8,10 +8,13 @@ namespace CalendarioVale.Data.Model
         [Key]
         [JsonPropertyName("id")]
         public string Id { get; set; }
+
         [JsonPropertyName("value")]
         public int Value { get; set; }
+
         [JsonPropertyName("type")]
         public BiometricsType Type { get; set; }
+
         [JsonPropertyName("dateReading")]
         public DateTime? DateReading { get; set; }
 
