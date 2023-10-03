@@ -416,7 +416,7 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode
-CalendarioVale/obj
-CalendarioVale/bin
-CalendarioVale.Test/obj
-CalendarioVale.Test/bin
+CalendarioVale/bin/
+CalendarioVale/obj/
+CalendarioVale.Test/bin/
+CalendarioVale.Test/obj/
