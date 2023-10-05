@@ -22,17 +22,26 @@
         </article>
     </main>
 </div>
- @code {
+@code {
 
-    [CascadingParameter] protected Task<AuthenticationState> AuthStat { get; set; }
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationState { get; set; }
 
     protected async override Task OnInitializedAsync()
     {
         base.OnInitialized();
-        @* var user = (await AuthStat).User;
-        if (!user.Identity.IsAuthenticated)
+        if (authenticationState is not null)
+        {
+            var authState = await authenticationState;
+            var user = authState?.User;
+            if (user?.Identity is null || user.Identity.IsAuthenticated)
+            {
+                NavigationManager.NavigateTo("Identity/Account/Login");
+            }
+        }
+        else
         {
             NavigationManager.NavigateTo("Identity/Account/Login");
-        } *@
+        }
     }
-} 
+}
