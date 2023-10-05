@@ -14,7 +14,7 @@ namespace CalendarioVale.Data.Reposotory
 
         public async Task<DailyStatus> GetByDate(DateTime date)
         {
-            return await GetByDateCompiled(_context, date);
+            return await GetByDateCompiled(_context, date).ConfigureAwait(false);
         }
 
         public IAsyncEnumerable<DailyStatus> GetBetweenDate(DateTime startDate, DateTime endDate)
@@ -37,7 +37,7 @@ namespace CalendarioVale.Data.Reposotory
                 }
                 else
                 {
-                    await _context.AddAsync(toSave);
+                    await _context.AddAsync(toSave).ConfigureAwait(false);
                 }
                 _context.SaveChanges();
             }

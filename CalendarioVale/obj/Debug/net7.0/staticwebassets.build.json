@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I+9hC10eJ37md5dNqKHSbA5EUHaWUTDeHfpivKywvZo=",
+  "Hash": "ztstlBiKLKg5Mz+MGd9KLIzk8ONO8DwTF8bLnHp/ln4=",
   "Source": "CalendarioVale",
   "BasePath": "_content/CalendarioVale",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "CalendarioVale/wwwroot",
       "Source": "CalendarioVale",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "Pattern": "**"
     }
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "/home/matteo/.nuget/packages/microsoft.aspnetcore.identity.ui/7.0.5/staticwebassets/V5/lib/jquery/LICENSE.txt"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/dark-base.css",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/dark-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/dark-base.css",
       "AssetKind": "All",
@@ -1051,13 +1051,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/dark-base.css"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/dark-base.css"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/dark.css",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/dark.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/dark.css",
       "AssetKind": "All",
@@ -1068,13 +1068,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/dark.css"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/dark.css"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/default-base.css",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/default-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/default-base.css",
       "AssetKind": "All",
@@ -1085,13 +1085,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/default-base.css"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/default-base.css"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/default.css",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/default.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/default.css",
       "AssetKind": "All",
@@ -1102,13 +1102,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/default.css"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/default.css"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/humanistic-base.css",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/humanistic-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/humanistic-base.css",
       "AssetKind": "All",
@@ -1119,13 +1119,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/humanistic-base.css"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/humanistic-base.css"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/humanistic.css",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/humanistic.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/humanistic.css",
       "AssetKind": "All",
@@ -1136,13 +1136,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/humanistic.css"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/humanistic.css"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/material-base.css",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/material-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material-base.css",
       "AssetKind": "All",
@@ -1153,13 +1153,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/material-base.css"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/material-base.css"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/material.css",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/material.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material.css",
       "AssetKind": "All",
@@ -1170,13 +1170,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/material.css"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/material.css"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/software-base.css",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/software-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/software-base.css",
       "AssetKind": "All",
@@ -1187,13 +1187,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/software-base.css"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/software-base.css"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/software.css",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/software.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/software.css",
       "AssetKind": "All",
@@ -1204,13 +1204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/software.css"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/software.css"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/standard-base.css",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/standard-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/standard-base.css",
       "AssetKind": "All",
@@ -1221,13 +1221,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/standard-base.css"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/standard-base.css"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/standard.css",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/standard.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/standard.css",
       "AssetKind": "All",
@@ -1238,13 +1238,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/css/standard.css"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/css/standard.css"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/MaterialIcons-Regular.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/MaterialIcons-Regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/MaterialIcons-Regular.woff",
       "AssetKind": "All",
@@ -1255,13 +1255,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/MaterialIcons-Regular.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/MaterialIcons-Regular.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v15-latin-300.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v15-latin-300.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-300.woff",
       "AssetKind": "All",
@@ -1272,13 +1272,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v15-latin-300.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v15-latin-300.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v15-latin-700.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v15-latin-700.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-700.woff",
       "AssetKind": "All",
@@ -1289,13 +1289,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v15-latin-700.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v15-latin-700.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v15-latin-regular.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v15-latin-regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-regular.woff",
       "AssetKind": "All",
@@ -1306,13 +1306,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v15-latin-regular.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v15-latin-regular.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v30-latin-300.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v30-latin-300.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-300.woff",
       "AssetKind": "All",
@@ -1323,13 +1323,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v30-latin-300.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v30-latin-300.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v30-latin-500.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v30-latin-500.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-500.woff",
       "AssetKind": "All",
@@ -1340,13 +1340,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v30-latin-500.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v30-latin-500.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v30-latin-700.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v30-latin-700.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-700.woff",
       "AssetKind": "All",
@@ -1357,13 +1357,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v30-latin-700.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v30-latin-700.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v30-latin-regular.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v30-latin-regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-regular.woff",
       "AssetKind": "All",
@@ -1374,13 +1374,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/roboto-v30-latin-regular.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/roboto-v30-latin-regular.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-Black.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-Black.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Black.woff",
       "AssetKind": "All",
@@ -1391,13 +1391,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-Black.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-Black.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-BlackIt.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-BlackIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-BlackIt.woff",
       "AssetKind": "All",
@@ -1408,13 +1408,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-BlackIt.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-BlackIt.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-Bold.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-Bold.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Bold.woff",
       "AssetKind": "All",
@@ -1425,13 +1425,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-Bold.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-Bold.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-BoldIt.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-BoldIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-BoldIt.woff",
       "AssetKind": "All",
@@ -1442,13 +1442,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-BoldIt.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-BoldIt.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-ExtraLight.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-ExtraLight.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-ExtraLight.woff",
       "AssetKind": "All",
@@ -1459,13 +1459,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-ExtraLight.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-ExtraLight.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-ExtraLightIt.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-ExtraLightIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-ExtraLightIt.woff",
       "AssetKind": "All",
@@ -1476,13 +1476,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-ExtraLightIt.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-ExtraLightIt.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-It.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-It.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-It.woff",
       "AssetKind": "All",
@@ -1493,13 +1493,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-It.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-It.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-Light.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-Light.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Light.woff",
       "AssetKind": "All",
@@ -1510,13 +1510,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-Light.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-Light.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-LightIt.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-LightIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-LightIt.woff",
       "AssetKind": "All",
@@ -1527,13 +1527,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-LightIt.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-LightIt.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-Regular.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-Regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Regular.woff",
       "AssetKind": "All",
@@ -1544,13 +1544,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-Regular.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-Regular.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-Semibold.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-Semibold.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Semibold.woff",
       "AssetKind": "All",
@@ -1561,13 +1561,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-Semibold.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-Semibold.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-SemiboldIt.woff",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-SemiboldIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-SemiboldIt.woff",
       "AssetKind": "All",
@@ -1578,13 +1578,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/fonts/SourceSansPro-SemiboldIt.woff"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/fonts/SourceSansPro-SemiboldIt.woff"
     },
     {
-      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/Radzen.Blazor.js",
+      "Identity": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/Radzen.Blazor.js",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/",
+      "ContentRoot": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "Radzen.Blazor.js",
       "AssetKind": "All",
@@ -1595,13 +1595,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.11.2/staticwebassets/Radzen.Blazor.js"
+      "OriginalItemSpec": "/home/matteo/.nuget/packages/radzen.blazor/4.16.4/staticwebassets/Radzen.Blazor.js"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/obj/Debug/net7.0/scopedcss/bundle/CalendarioVale.styles.css",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/obj/Debug/net7.0/scopedcss/bundle/CalendarioVale.styles.css",
       "SourceId": "CalendarioVale",
       "SourceType": "Computed",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/obj/Debug/net7.0/scopedcss/bundle/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/obj/Debug/net7.0/scopedcss/bundle/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "CalendarioVale.styles.css",
       "AssetKind": "All",
@@ -1612,13 +1612,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/Documents/CalendarioVale/CalendarioVale/obj/Debug/net7.0/scopedcss/bundle/CalendarioVale.styles.css"
+      "OriginalItemSpec": "/home/matteo/Repository/CalendarioVale/CalendarioVale/obj/Debug/net7.0/scopedcss/bundle/CalendarioVale.styles.css"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/obj/Debug/net7.0/scopedcss/projectbundle/CalendarioVale.bundle.scp.css",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/obj/Debug/net7.0/scopedcss/projectbundle/CalendarioVale.bundle.scp.css",
       "SourceId": "CalendarioVale",
       "SourceType": "Computed",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/obj/Debug/net7.0/scopedcss/projectbundle/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/obj/Debug/net7.0/scopedcss/projectbundle/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "CalendarioVale.bundle.scp.css",
       "AssetKind": "All",
@@ -1629,13 +1629,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/matteo/Documents/CalendarioVale/CalendarioVale/obj/Debug/net7.0/scopedcss/projectbundle/CalendarioVale.bundle.scp.css"
+      "OriginalItemSpec": "/home/matteo/Repository/CalendarioVale/CalendarioVale/obj/Debug/net7.0/scopedcss/projectbundle/CalendarioVale.bundle.scp.css"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/css/bootstrap/bootstrap.min.css",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/FONT-LICENSE",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/FONT-LICENSE",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.eot"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.otf"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.svg"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.woff"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/ICON-LICENSE",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/ICON-LICENSE",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/ICON-LICENSE"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/README.md",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/css/open-iconic/README.md",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/css/site.css",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/css/site.css",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/favicon.png",
+      "Identity": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/favicon.png",
       "SourceId": "CalendarioVale",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/matteo/Documents/CalendarioVale/CalendarioVale/wwwroot/",
+      "ContentRoot": "/home/matteo/Repository/CalendarioVale/CalendarioVale/wwwroot/",
       "BasePath": "_content/CalendarioVale",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

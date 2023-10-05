@@ -24,7 +24,7 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
-      "LibSassBuilder/2.0.1": {
+      "DartSassBuilder/1.0.0": {
         "type": "package",
         "build": {
           "build/_._": {}
@@ -995,13 +995,13 @@
           }
         }
       },
-      "Radzen.Blazor/4.11.2": {
+      "Radzen.Blazor/4.16.4": {
         "type": "package",
         "dependencies": {
-          "LibSassBuilder": "2.0.1",
+          "DartSassBuilder": "1.0.0",
           "Microsoft.AspNetCore.Components": "7.0.0",
           "Microsoft.AspNetCore.Components.Web": "7.0.0",
-          "System.Linq.Dynamic.Core": "1.2.22"
+          "System.Linq.Dynamic.Core": "1.3.0"
         },
         "compile": {
           "lib/net7.0/Radzen.Blazor.dll": {
@@ -1627,15 +1627,15 @@
           }
         }
       },
-      "System.Linq.Dynamic.Core/1.2.22": {
+      "System.Linq.Dynamic.Core/1.3.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Linq.Dynamic.Core.dll": {
+          "lib/net7.0/System.Linq.Dynamic.Core.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Linq.Dynamic.Core.dll": {
+          "lib/net7.0/System.Linq.Dynamic.Core.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -2479,7 +2479,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.18.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.4",
-          "Radzen.Blazor": "4.11.2",
+          "Radzen.Blazor": "4.16.4",
           "Swashbuckle.AspNetCore": "6.2.3",
           "System.Linq.Async": "6.0.1",
           "xunit": "2.4.2"
@@ -2574,34 +2574,43 @@
         "coverlet.collector.nuspec"
       ]
     },
-    "LibSassBuilder/2.0.1": {
-      "sha512": "f+7TWQtCirW94VdzKL9SaAfeSF96TeEqdtDztmTGbndrcUlZZlL6uJLZKQCXQgj1BB3OqX0584OCvqFHrkAusA==",
+    "DartSassBuilder/1.0.0": {
+      "sha512": "bcM9YuWmNUuneEIp5rSFeHNQaZFqC0zKdK8JQvCFGzjX3pLyyQ0ReHPbawqOkTtfubQz4JPkzFzgJAo9Aixiew==",
       "type": "package",
-      "path": "libsassbuilder/2.0.1",
+      "path": "dartsassbuilder/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LibSassBuilder.csproj",
-        "build/DesignTime/LibSassBuilder.DesignTime.targets",
+        "DartSassBuilder.csproj",
+        "build/DartSassBuilder.props",
+        "build/DartSassBuilder.targets",
+        "build/DesignTime/DartSassBuilder.DesignTime.targets",
         "build/DesignTime/Rules/ProjectItemsSchema.xaml",
         "build/DesignTime/Rules/SassFileType.xaml",
-        "build/LibSassBuilder.props",
-        "build/LibSassBuilder.targets",
-        "libsassbuilder.2.0.1.nupkg.sha512",
-        "libsassbuilder.nuspec",
+        "dartsassbuilder.1.0.0.nupkg.sha512",
+        "dartsassbuilder.nuspec",
         "sass.png",
         "tool/AdvancedStringBuilder.dll",
+        "tool/ClearScript.Core.dll",
+        "tool/ClearScript.V8.ICUData.dll",
+        "tool/ClearScript.V8.dll",
         "tool/CommandLine.dll",
-        "tool/LibSassBuilder.deps.json",
-        "tool/LibSassBuilder.dll",
-        "tool/LibSassBuilder.exe",
-        "tool/LibSassBuilder.pdb",
-        "tool/LibSassBuilder.runtimeconfig.json",
-        "tool/LibSassHost.dll",
-        "tool/runtimes/linux-x64/native/libsass.so",
-        "tool/runtimes/osx-x64/native/libsass.dylib",
-        "tool/runtimes/win-x64/native/libsass.dll",
-        "tool/x64/libsass.dll"
+        "tool/DartSassBuilder.deps.json",
+        "tool/DartSassBuilder.dll",
+        "tool/DartSassBuilder.exe",
+        "tool/DartSassBuilder.pdb",
+        "tool/DartSassBuilder.runtimeconfig.json",
+        "tool/DartSassHost.dll",
+        "tool/JavaScriptEngineSwitcher.Core.dll",
+        "tool/JavaScriptEngineSwitcher.V8.dll",
+        "tool/Newtonsoft.Json.dll",
+        "tool/ru-RU/JavaScriptEngineSwitcher.Core.resources.dll",
+        "tool/ru-RU/JavaScriptEngineSwitcher.V8.resources.dll",
+        "tool/runtimes/linux-x64/native/ClearScriptV8.linux-x64.so",
+        "tool/runtimes/osx-arm64/native/ClearScriptV8.osx-arm64.dylib",
+        "tool/runtimes/osx-x64/native/ClearScriptV8.osx-x64.dylib",
+        "tool/runtimes/win-x64/native/ClearScriptV8.win-x64.dll",
+        "tool/runtimes/win-x86/native/ClearScriptV8.win-x86.dll"
       ]
     },
     "Microsoft.AspNetCore.Authorization/7.0.0": {
@@ -3921,10 +3930,10 @@
         "nuget.frameworks.nuspec"
       ]
     },
-    "Radzen.Blazor/4.11.2": {
-      "sha512": "iaVyOeMDzX9Jx8EeyhnKESD2yhVcvGqOVRYQf6ZOiAsIkGkXEMw1p5ZAaJbPJeER1U0xzPGesm9wh2psL1tBZA==",
+    "Radzen.Blazor/4.16.4": {
+      "sha512": "RnJUBnU0LQM3QOWmYjHsNjkIsphhjBkKTIlE2pw+iXkYLrXZEHq2sKv2VH9aA7RV1atUPk7IjReU01xESSuO3g==",
       "type": "package",
-      "path": "radzen.blazor/4.11.2",
+      "path": "radzen.blazor/4.16.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3943,7 +3952,7 @@
         "lib/net7.0/Radzen.Blazor.xml",
         "lib/netstandard2.1/Radzen.Blazor.dll",
         "lib/netstandard2.1/Radzen.Blazor.xml",
-        "radzen.blazor.4.11.2.nupkg.sha512",
+        "radzen.blazor.4.16.4.nupkg.sha512",
         "radzen.blazor.nuspec",
         "staticwebassets/Radzen.Blazor.js",
         "staticwebassets/css/dark-base.css",
@@ -5338,10 +5347,10 @@
         "system.linq.async.nuspec"
       ]
     },
-    "System.Linq.Dynamic.Core/1.2.22": {
-      "sha512": "PB57h0KkIvCF1X/x7iZZKdgiQSo/5geNrConfaw4KEsbyX25MuAEcLOc5RF5GNycSfC7qwaL4L8Mm6b8uMmcAw==",
+    "System.Linq.Dynamic.Core/1.3.0": {
+      "sha512": "WocaU/koGKDu/kiHGJCT6ocqqygQmD5B+9nCyA3nWbMywvPVRhtre1rTHCUNdoi6ZBnPOMvkqqx8oVkP1VCy3Q==",
       "type": "package",
-      "path": "system.linq.dynamic.core/1.2.22",
+      "path": "system.linq.dynamic.core/1.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5366,6 +5375,9 @@
         "lib/net6.0/System.Linq.Dynamic.Core.dll",
         "lib/net6.0/System.Linq.Dynamic.Core.pdb",
         "lib/net6.0/System.Linq.Dynamic.Core.xml",
+        "lib/net7.0/System.Linq.Dynamic.Core.dll",
+        "lib/net7.0/System.Linq.Dynamic.Core.pdb",
+        "lib/net7.0/System.Linq.Dynamic.Core.xml",
         "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll",
         "lib/netcoreapp2.1/System.Linq.Dynamic.Core.pdb",
         "lib/netcoreapp2.1/System.Linq.Dynamic.Core.xml",
@@ -5386,7 +5398,7 @@
         "lib/uap10.0.10240/System.Linq.Dynamic.Core.pri",
         "lib/uap10.0.10240/System.Linq.Dynamic.Core.xml",
         "logo.png",
-        "system.linq.dynamic.core.1.2.22.nupkg.sha512",
+        "system.linq.dynamic.core.1.3.0.nupkg.sha512",
         "system.linq.dynamic.core.nuspec"
       ]
     },
@@ -7570,34 +7582,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\garat\\.nuget\\packages\\": {}
+    "/home/matteo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\garat\\Documents\\Repository\\CalendarioVale\\CalendarioVale.Test\\CalendarioVale.Test.csproj",
+      "projectUniqueName": "/home/matteo/Repository/CalendarioVale/CalendarioVale.Test/CalendarioVale.Test.csproj",
       "projectName": "CalendarioVale.Test",
-      "projectPath": "C:\\Users\\garat\\Documents\\Repository\\CalendarioVale\\CalendarioVale.Test\\CalendarioVale.Test.csproj",
-      "packagesPath": "C:\\Users\\garat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\garat\\Documents\\Repository\\CalendarioVale\\CalendarioVale.Test\\obj\\",
+      "projectPath": "/home/matteo/Repository/CalendarioVale/CalendarioVale.Test/CalendarioVale.Test.csproj",
+      "packagesPath": "/home/matteo/.nuget/packages/",
+      "outputPath": "/home/matteo/Repository/CalendarioVale/CalendarioVale.Test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\garat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/matteo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\garat\\Documents\\Repository\\CalendarioVale\\CalendarioVale\\CalendarioVale.csproj": {
-              "projectPath": "C:\\Users\\garat\\Documents\\Repository\\CalendarioVale\\CalendarioVale\\CalendarioVale.csproj"
+            "/home/matteo/Repository/CalendarioVale/CalendarioVale/CalendarioVale.csproj": {
+              "projectPath": "/home/matteo/Repository/CalendarioVale/CalendarioVale/CalendarioVale.csproj"
             }
           }
         }
@@ -7653,7 +7663,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }

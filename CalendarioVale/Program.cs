@@ -9,8 +9,6 @@ using Microsoft.EntityFrameworkCore;
 using Radzen;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<CalendarioVale.Data.ApplicationDbContext>(options =>
     options.UseNpgsql(connectionString));
@@ -42,6 +40,8 @@ builder.Services.AddScoped<DialogService>();
 builder.Services.AddScoped<NotificationService>();
 builder.Services.AddScoped<TooltipService>();
 builder.Services.AddScoped<ContextMenuService>();
+// Add services to the container.
+builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddScoped<IDailyStatusService, DailyStatusService>();
@@ -50,22 +50,19 @@ builder.Services.AddControllers().PartManager.ApplicationParts.Add(new AssemblyP
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
 }
 
-app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 
 app.UseRouting();
-
 app.UseAuthorization();
 
 app.MapControllers();

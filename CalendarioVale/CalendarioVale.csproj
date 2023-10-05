@@ -1,13 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-	<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
-	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-	<UserSecretsId>75e64eb8-d068-4736-8372-e83f6bc53d20</UserSecretsId>
-	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,10 +16,10 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
-    <PackageReference Include="Radzen.Blazor" Version="4.11.2" />
+    <PackageReference Include="Radzen.Blazor" Version="4.16.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="System.Linq.Async" Version="6.0.1" />
     <PackageReference Include="xunit" Version="2.4.2" />
   </ItemGroup>
-
+  
 </Project>

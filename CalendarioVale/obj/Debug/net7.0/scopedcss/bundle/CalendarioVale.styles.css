@@ -1,19 +1,19 @@
 /* _content/CalendarioVale/Shared/MainLayout.razor.rz.scp.css */
-.page[b-h7vvl1gnts] {
+.page[b-vc1fllrc2y] {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-main[b-h7vvl1gnts] {
+main[b-vc1fllrc2y] {
     flex: 1;
 }
 
-.sidebar[b-h7vvl1gnts] {
+.sidebar[b-vc1fllrc2y] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
-.top-row[b-h7vvl1gnts] {
+.top-row[b-vc1fllrc2y] {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
@@ -22,88 +22,88 @@ main[b-h7vvl1gnts] {
     align-items: center;
 }
 
-    .top-row[b-h7vvl1gnts]  a, .top-row .btn-link[b-h7vvl1gnts] {
+    .top-row[b-vc1fllrc2y]  a, .top-row .btn-link[b-vc1fllrc2y] {
         white-space: nowrap;
         margin-left: 1.5rem;
     }
 
-    .top-row a:first-child[b-h7vvl1gnts] {
+    .top-row a:first-child[b-vc1fllrc2y] {
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
 @media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-h7vvl1gnts] {
+    .top-row:not(.auth)[b-vc1fllrc2y] {
         display: none;
     }
 
-    .top-row.auth[b-h7vvl1gnts] {
+    .top-row.auth[b-vc1fllrc2y] {
         justify-content: space-between;
     }
 
-    .top-row a[b-h7vvl1gnts], .top-row .btn-link[b-h7vvl1gnts] {
+    .top-row a[b-vc1fllrc2y], .top-row .btn-link[b-vc1fllrc2y] {
         margin-left: 0;
     }
 }
 
 @media (min-width: 641px) {
-    .page[b-h7vvl1gnts] {
+    .page[b-vc1fllrc2y] {
         flex-direction: row;
     }
 
-    .sidebar[b-h7vvl1gnts] {
+    .sidebar[b-vc1fllrc2y] {
         width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
 
-    .top-row[b-h7vvl1gnts] {
+    .top-row[b-vc1fllrc2y] {
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
-    .top-row[b-h7vvl1gnts], article[b-h7vvl1gnts] {
+    .top-row[b-vc1fllrc2y], article[b-vc1fllrc2y] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
 }
 /* _content/CalendarioVale/Shared/NavMenu.razor.rz.scp.css */
-.navbar-toggler[b-17etu3da4x] {
+.navbar-toggler[b-gw3wxhpzgw] {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.top-row[b-17etu3da4x] {
+.top-row[b-gw3wxhpzgw] {
     height: 3.5rem;
     background-color: rgba(0,0,0,0.4);
 }
 
-.navbar-brand[b-17etu3da4x] {
+.navbar-brand[b-gw3wxhpzgw] {
     font-size: 1.1rem;
 }
 
-.oi[b-17etu3da4x] {
+.oi[b-gw3wxhpzgw] {
     width: 2rem;
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
 }
 
-.nav-item[b-17etu3da4x] {
+.nav-item[b-gw3wxhpzgw] {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type[b-17etu3da4x] {
+    .nav-item:first-of-type[b-gw3wxhpzgw] {
         padding-top: 1rem;
     }
 
-    .nav-item:last-of-type[b-17etu3da4x] {
+    .nav-item:last-of-type[b-gw3wxhpzgw] {
         padding-bottom: 1rem;
     }
 
-    .nav-item[b-17etu3da4x]  a {
+    .nav-item[b-gw3wxhpzgw]  a {
         color: #d7d7d7;
         border-radius: 4px;
         height: 3rem;
@@ -112,27 +112,27 @@ main[b-h7vvl1gnts] {
         line-height: 3rem;
     }
 
-        .nav-item[b-17etu3da4x]  a.active {
-            background-color: rgba(255,255,255,0.25);
-            color: white;
-        }
+.nav-item[b-gw3wxhpzgw]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
 
-        .nav-item[b-17etu3da4x]  a:hover {
-            background-color: rgba(255,255,255,0.1);
-            color: white;
-        }
+.nav-item[b-gw3wxhpzgw]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
 
 @media (min-width: 641px) {
-    .navbar-toggler[b-17etu3da4x] {
+    .navbar-toggler[b-gw3wxhpzgw] {
         display: none;
     }
 
-    .collapse[b-17etu3da4x] {
+    .collapse[b-gw3wxhpzgw] {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
-
-    .nav-scrollable[b-17etu3da4x] {
+    
+    .nav-scrollable[b-gw3wxhpzgw] {
         /* Allow sidebar to scroll for tall menus */
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
