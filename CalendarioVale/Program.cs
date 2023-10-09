@@ -51,6 +51,9 @@ builder.Services.AddControllers().PartManager.ApplicationParts.Add(new AssemblyP
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAuthentication();
+builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -59,11 +62,11 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error");
 }
 
-
 app.UseStaticFiles();
 
 app.UseRouting();
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllers();
 app.MapBlazorHub();
