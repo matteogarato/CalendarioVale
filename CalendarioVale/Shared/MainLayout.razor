@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 @inject NavigationManager NavigationManager
-
+@inject AuthenticationStateProvider AuthenticationStateProvider
 <PageTitle>CalendarioVale</PageTitle>
 
 <div class="page">
@@ -23,18 +23,15 @@
     </main>
 </div>
 @code {
-
-    [CascadingParameter]
-    private Task<AuthenticationState>? authenticationState { get; set; }
-
     protected async override Task OnInitializedAsync()
     {
         base.OnInitialized();
-        if (authenticationState is not null)
+        var authState = await AuthenticationStateProvider
+            .GetAuthenticationStateAsync();
+        if (authState is not null)
         {
-            var authState = await authenticationState;
             var user = authState?.User;
-            if (user?.Identity is null || user.Identity.IsAuthenticated)
+            if (user?.Identity is null || !user.Identity.IsAuthenticated)
             {
                 NavigationManager.NavigateTo("Identity/Account/Login");
             }
@@ -43,5 +40,5 @@
         {
             NavigationManager.NavigateTo("Identity/Account/Login");
         }
-    }
+    }    
 }
