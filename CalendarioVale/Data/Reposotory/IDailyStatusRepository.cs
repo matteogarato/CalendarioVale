@@ -4,7 +4,7 @@ namespace CalendarioVale.Data.Reposotory
 {
     public interface IDailyStatusRepository
     {
-        Task<DailyStatus> GetByDate(DateTime date);
+        Task<DailyStatus?> GetByDate(DateTime date);
 
         IAsyncEnumerable<DailyStatus> GetBetweenDate(DateTime startDate, DateTime endDate);
 

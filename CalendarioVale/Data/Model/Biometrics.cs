@@ -16,14 +16,19 @@ namespace CalendarioVale.Data.Model
         public BiometricsType Type { get; set; }
 
         [JsonPropertyName("dateReading")]
-        public DateTime? DateReading { get; set; }
+        public DateTime DateReading { get; set; }
 
-        public Biometrics(int value, BiometricsType type, DateTime? dateReading)
+        public Biometrics(int value, BiometricsType type, DateTime dateReading)
         {
             Id = Guid.NewGuid().ToString();
             Value = value;
             Type = type;
             DateReading = dateReading;
+        }
+
+        public Biometrics()
+        {
+
         }
     }
 }

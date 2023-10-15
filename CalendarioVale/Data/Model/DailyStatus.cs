@@ -10,7 +10,6 @@ namespace CalendarioVale.Data.Model
         public bool GotoWork { get; set; }
         public string Note { get; set; } = string.Empty;
 
-        [Required]
         public DateTime Modify { get; set; }
 
         public bool Visible { get; set; }

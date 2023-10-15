@@ -11,7 +11,7 @@ public class BiometricsDto
     public BiometricsType Type { get; set; }
 
     [JsonPropertyName("dateReading")]
-    public DateTime? DateReading { get; set; }
+    public DateTime DateReading { get; set; }
 
     [JsonConstructor]
     public BiometricsDto()

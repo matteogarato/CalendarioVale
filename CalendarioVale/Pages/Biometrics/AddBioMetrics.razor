@@ -1,0 +1,54 @@
+﻿@page "/AddBioMetrics"
+@attribute [Authorize]
+@inject IDailyStatusService DailyStatusService
+
+<RadzenTemplateForm TItem="Biometrics" Data="@model" Submit=@OnSubmit>
+    <div class="row">
+        <div class="col-md-3">
+            <RadzenLabel Text="Tipo Di Dato" />
+        </div>
+        <div class="col">
+            <RadzenDropDown @bind-Value=@type Data="@(Enum.GetValues(typeof(BiometricsType)).Cast<Enum>())"
+                Style="width: 100%; max-width: 400px;" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <RadzenLabel Text="Data" />
+        </div>
+        <div class="col">
+            <RadzenDatePicker ShowTime="true" @bind-Value="@model.DateReading" Name="Date" DateFormat="dd/MM/yyyy HH:mm" />
+            <RadzenRequiredValidator Text="Data obbligatoria" Component="Date" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <RadzenLabel Text="Valore" />
+        </div>
+        <div class="col">
+            <input type='number' @bind-value="@model.Value" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col">
+            <RadzenButton ButtonType="ButtonType.Submit" Text="Save" />
+        </div>
+    </div>
+</RadzenTemplateForm>
+@code {
+    [Parameter]
+    public DateTime Date { get; set; }
+
+    public BiometricsType type { get; set; }
+    Biometrics model = new Biometrics();
+
+    protected override void OnParametersSet()
+    {
+        model.Type = type;
+    }
+    async Task OnSubmit(Biometrics model)
+    {
+        await DailyStatusService.AddBiometrics(model).ConfigureAwait(false);
+    }
+}

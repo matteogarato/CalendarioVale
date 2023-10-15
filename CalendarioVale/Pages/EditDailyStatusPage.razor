@@ -1,13 +1,14 @@
 ﻿@attribute [Authorize]
 @inject DialogService DialogService
+@inject NavigationManager NavigationManager
 
 <RadzenTemplateForm TItem="DailyStatus" Data="@model" Submit=@OnSubmit>
-    <div class="row" style="margin-bottom: 16px">
+    <div class="row">
         <div class="col-md-3">
             <RadzenLabel Text="Va a Lavoro" />
         </div>
         <div class="col">
-            <RadzenSelectBar @bind-Value=@model.GotoWork ValueProperty="GotoWork" TValue="bool" class="mb-5">
+            <RadzenSelectBar @bind-Value=@model.GotoWork ValueProperty="GotoWork" TValue="bool">
                 <Items>
                     <RadzenSelectBarItem Text="Si" Value="true" />
                     <RadzenSelectBarItem Text="No" Value="false" />
@@ -15,7 +16,7 @@
             </RadzenSelectBar>
         </div>
     </div>
-    <div class="row" style="margin-bottom: 16px">
+    <div class="row">
         <div class="col-md-3">
             <RadzenLabel Text="Data" />
         </div>
@@ -24,18 +25,25 @@
             <RadzenRequiredValidator Text="Data obbligatoria" Component="Date" />
         </div>
     </div>
-    <div class="row" style="margin-bottom: 16px">
+    <div class="row">
         <div class="col-md-3">
-            <RadzenLabel Text="Text" />
+            <RadzenLabel Text="Note" />
         </div>
         <div class="col">
-            <RadzenTextBox @bind-Value="@model.Note" Name="Text" />
+            <RadzenTextBox @bind-Value="@model.Note" Name="Note" />
         </div>
     </div>
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col">
-            <RadzenButton ButtonType="ButtonType.Submit" Text="Save" />
+            <RadzenButton Click=@(args => OnClick("Primary button")) Text="Aggiungi dati"
+         Bu     ttonStyle="ButtonStyle.Primary" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col">
+            <RadzenButton ButtonType="ButtonType.Submit" Text="Salva" />
         </div>
     </div>
 </RadzenTemplateForm>
@@ -53,5 +61,9 @@
     void OnSubmit(DailyStatus model)
     {
         DialogService.Close(model);
+    }
+    private void OnClick(string text)
+    {
+        NavigationManager.NavigateTo("AddBioMetrics");
     }
 }

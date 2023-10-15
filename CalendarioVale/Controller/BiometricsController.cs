@@ -22,7 +22,7 @@ public class BiometricsController : Controller
         {
             return BadRequest();
         }
-        await _dailyStatusService.AddBiometrics(bio.ToBiometrics(), DateTime.Today);
+        await _dailyStatusService.AddBiometrics(bio.ToBiometrics());
         return Ok();
     }
 }

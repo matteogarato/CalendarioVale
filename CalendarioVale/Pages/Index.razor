@@ -1,9 +1,30 @@
 ﻿@page "/"
+@using System.Threading    
+@implements IDisposable
 
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
+<p>@theTime</p>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@code{
+
+    string theTime;    
+    Timer aTimer;
+
+    protected override void OnInitialized()
+    {
+        aTimer = new Timer(Tick, null, 0, 1000);        
+    }
+
+    private void Tick(object _)
+    {
+        theTime = DateTime.Now.ToLongTimeString();
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        aTimer?.Dispose();
+    }
+}
