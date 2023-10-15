@@ -47,7 +47,7 @@ namespace CalendarioVale.Services
                 Visible = true
             };
             d.Biometrics = d.Biometrics is null ? new List<Biometrics>() : d.Biometrics;
-            _ = d.Biometrics.Append(bio);
+            d.Biometrics.Add(bio);
             await Save(d).ConfigureAwait(false);
         }
 

@@ -46,7 +46,7 @@ namespace CalendarioVale.Data.Reposotory
         private static readonly Func<ApplicationDbContext, DateTime, Task<DailyStatus?>> GetByDateCompiled =
        EF.CompileAsyncQuery(
             (ApplicationDbContext context, DateTime date) =>
-               context.Set<DailyStatus>().Include(b => b.Biometrics).FirstOrDefault(h => h.Visible && h.Date == date ));
+               context.Set<DailyStatus>().Include(b => b.Biometrics).FirstOrDefault(h => h.Visible && h.Date.Year == date.Year && h.Date.Month == date.Month && h.Date.Day == date.Day));
 
         private static readonly Func<ApplicationDbContext, DateTime, DateTime, IAsyncEnumerable<DailyStatus>> GetBetweenDateCompiled =
         EF.CompileAsyncQuery(

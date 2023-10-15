@@ -28,7 +28,7 @@ namespace CalendarioVale.Data.Model
 
         public Biometrics()
         {
-
+            Id = Guid.NewGuid().ToString();
         }
     }
 }
