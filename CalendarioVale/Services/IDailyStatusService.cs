@@ -8,6 +8,8 @@ namespace CalendarioVale.Services
 
         public Task<List<DailyStatus>> GetBetweenDate(DateTime startDate, DateTime endDate);
 
+        public Task<List<Biometrics>> GetBiometricsBetweenDate(DateTime startDate, DateTime endDate, BiometricsType bioType);
+
         public Task Save(DailyStatus toSave);
 
         public Task AddBiometrics(Biometrics bio);

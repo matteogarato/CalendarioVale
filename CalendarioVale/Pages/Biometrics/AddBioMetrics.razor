@@ -17,7 +17,8 @@
             <RadzenLabel Text="Data" />
         </div>
         <div class="col">
-            <RadzenDatePicker ShowTime="true" @bind-Value="@model.DateReading" Name="Date" DateFormat="dd/MM/yyyy HH:mm" />
+            <RadzenDatePicker ShowTime="true" @bind-Value="@model.DateReading" Name="Date"
+                DateFormat="dd/MM/yyyy HH:mm" />
             <RadzenRequiredValidator Text="Data obbligatoria" Component="Date" />
         </div>
     </div>
@@ -26,7 +27,7 @@
             <RadzenLabel Text="Valore" />
         </div>
         <div class="col">
-            <input type='number' @bind-value="@model.Value" />
+            <RadzenNumeric ShowUpDown="false" TValue="int" @bind-value="@model.Value" />
         </div>
     </div>
     <div class="row">

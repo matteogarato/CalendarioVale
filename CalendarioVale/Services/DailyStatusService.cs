@@ -60,5 +60,16 @@ namespace CalendarioVale.Services
                 await Save(d).ConfigureAwait(false);
             }
         }
+
+        public async Task<List<Biometrics>> GetBiometricsBetweenDate(DateTime startDate, DateTime endDate, BiometricsType bioType)
+        {
+            var res = new List<Biometrics>();
+            var dailyStatuses = await GetBetweenDate(startDate, endDate).ConfigureAwait(false);
+            if(dailyStatuses is not null && dailyStatuses.Any())
+            {
+                res.AddRange(dailyStatuses.SelectMany(d => d.Biometrics));
+            }
+            return res;
+        }
     }
 }
