@@ -65,7 +65,7 @@ namespace CalendarioVale.Services
         {
             var res = new List<Biometrics>();
             var dailyStatuses = await GetBetweenDate(startDate, endDate).ConfigureAwait(false);
-            if(dailyStatuses is not null && dailyStatuses.Any())
+            if (dailyStatuses is not null && dailyStatuses.Any())
             {
                 res.AddRange(dailyStatuses.SelectMany(d => d.Biometrics));
             }
