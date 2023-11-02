@@ -8,7 +8,7 @@
             <RadzenLabel Text="Va a Lavoro" />
         </div>
         <div class="col">
-            <RadzenSelectBar @bind-Value=@model.GotoWork TValue="bool">
+            <RadzenSelectBar class="rz-my-1" @bind-Value=@model.GotoWork TValue="bool">
                 <Items>
                     <RadzenSelectBarItem Text="Si" Value="true" />
                     <RadzenSelectBarItem Text="No" Value="false" />
@@ -21,7 +21,7 @@
             <RadzenLabel Text="Data" />
         </div>
         <div class="col">
-            <RadzenDatePicker @bind-Value="@model.Date" Name="Date" ShowTime="false" />
+            <RadzenDatePicker class="rz-my-1" @bind-Value="@model.Date" Name="Date" ShowTime="false" />
             <RadzenRequiredValidator Text="Data obbligatoria" Component="Date" />
         </div>
     </div>
@@ -30,20 +30,20 @@
             <RadzenLabel Text="Note" />
         </div>
         <div class="col">
-            <RadzenTextBox @bind-Value="@model.Note" Name="Note" />
+            <RadzenTextBox class="rz-my-1" @bind-Value="@model.Note" Name="Note" />
         </div>
     </div>
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col">
-            <RadzenButton Click=@(args => OnClick("Primary button")) Text="Aggiungi dati"
+            <RadzenButton class="rz-my-1" Click=@(args => OnClick("Primary button")) Text="Aggiungi dati"
                 ButtonStyle="ButtonStyle.Primary" />
         </div>
     </div>
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col">
-            <RadzenButton ButtonType="ButtonType.Submit" Text="Salva" />
+            <RadzenButton class="rz-my-1" ButtonType="ButtonType.Submit" Text="Salva" />
         </div>
     </div>
 </RadzenTemplateForm>
@@ -66,6 +66,6 @@
     }
     private void OnClick(string text)
     {
-        NavigationManager.NavigateTo("AddBioMetrics");
+        NavigationManager.NavigateTo($"AddBioMetrics/{Date.ToString("s", System.Globalization.CultureInfo.InvariantCulture)}");
     }
 }

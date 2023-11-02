@@ -9,7 +9,7 @@
                 <RadzenLabel Text="Tipo Di Dato" />
             </div>
             <div class="col">
-                <RadzenDropDown @bind-Value=@type Data="@(Enum.GetValues(typeof(BiometricsType)).Cast<Enum>())"
+                <RadzenDropDown class="rz-my-1" @bind-Value=@type Data="@(Enum.GetValues(typeof(BiometricsType)).Cast<Enum>())"
                     Change="@OnChange" Style="width: 100%; max-width: 400px;" />
             </div>
         </div>
@@ -18,14 +18,14 @@
                 <RadzenLabel Text="Data Inizio" />
             </div>
             <div class="col">
-                <RadzenDatePicker ShowTime="true" @bind-Value="@startDate" Change="@OnChange" Name="startDate"
+                <RadzenDatePicker class="rz-my-1" ShowTime="true" @bind-Value="@startDate" Change="@OnChange" Name="startDate"
                     DateFormat="dd/MM/yyyy HH:mm" />
             </div>
             <div class="col-md-2">
                 <RadzenLabel Text="Data Fine" />
             </div>
             <div class="col">
-                <RadzenDatePicker ShowTime="true" @bind-Value="@endDate" Change="@OnChange" Name="endDate"
+                <RadzenDatePicker class="rz-my-1" ShowTime="true" @bind-Value="@endDate" Change="@OnChange" Name="endDate"
                     DateFormat="dd/MM/yyyy HH:mm" />
             </div>
         </div>
