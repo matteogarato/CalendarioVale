@@ -1,13 +1,12 @@
 ﻿using CalendarioVale.Data.Model;
 
-namespace CalendarioVale.Data.Reposotory
+namespace CalendarioVale.Data.Reposotory;
+
+public interface IDailyStatusRepository
 {
-    public interface IDailyStatusRepository
-    {
-        Task<DailyStatus?> GetByDate(DateTime date);
+    Task<DailyStatus?> GetByDate(DateTime date);
 
-        IAsyncEnumerable<DailyStatus> GetBetweenDate(DateTime startDate, DateTime endDate);
+    IAsyncEnumerable<DailyStatus> GetBetweenDate(DateTime startDate, DateTime endDate);
 
-        Task Save(DailyStatus toSave);
-    }
+    Task Save(DailyStatus toSave);
 }

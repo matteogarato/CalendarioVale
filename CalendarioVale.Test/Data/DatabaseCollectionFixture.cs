@@ -1,7 +1,6 @@
-﻿namespace CalendarioVale.Test.Data
+﻿namespace CalendarioVale.Test.Data;
+
+[CollectionDefinition("Database")]
+public class DatabaseCollectionFixture : ICollectionFixture<DatabaseTestCase>
 {
-    [CollectionDefinition("Database")]
-    public class DatabaseCollectionFixture : ICollectionFixture<DatabaseTestCase>
-    {
-    }
 }
