@@ -9,8 +9,8 @@
             <RadzenLabel Text="Tipo Di Dato" />
         </div>
         <div class="col">
-            <RadzenDropDown class="rz-my-1" @bind-Value=@type Data="@(Enum.GetValues(typeof(BiometricsType)).Cast<Enum>())"
-                Style="width: 100%; max-width: 400px;" />
+            <RadzenDropDown class="rz-my-1" @bind-Value=@type
+                Data="@(Enum.GetValues(typeof(BiometricsType)).Cast<Enum>())" Style="width: 100%; max-width: 400px;" />
         </div>
     </div>
     <div class="row">
@@ -41,7 +41,7 @@
 @code {
     [Parameter]
     public DateTime? Date { get; set; }
-
+    public Person? person { get; set; }
     public BiometricsType type { get; set; }
     Biometrics model = new Biometrics();
 
@@ -55,6 +55,6 @@
     }
     async Task OnSubmit(Biometrics model)
     {
-        await DailyStatusService.AddBiometrics(model).ConfigureAwait(false);
+        await DailyStatusService.AddBiometrics(model, person).ConfigureAwait(false);
     }
 }

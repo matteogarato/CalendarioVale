@@ -13,19 +13,19 @@ public class DailyStatusService : IDailyStatusService
         _statusRepository = dailyStatusRepository;
     }
 
-    public async Task<DailyStatus?> GetByDate(DateTime date)
+    public async Task<DailyStatus?> GetByDateAndPerson(DateTime date, Person person)
     {
-        return await _statusRepository.GetByDate(date).ConfigureAwait(false);
+        return await _statusRepository.GetByDateAndPerson(date, person).ConfigureAwait(false);
     }
 
-    public async Task<List<DailyStatus>> GetBetweenDate(DateTime startDate, DateTime endDate)
+    public async Task<List<DailyStatus>> GetBetweenDate(DateTime startDate, DateTime endDate, Person? person = null)
     {
-        return await _statusRepository.GetBetweenDate(startDate, endDate).ToListAsync().ConfigureAwait(false);
+        return await _statusRepository.GetBetweenDate(startDate, endDate, person).ToListAsync().ConfigureAwait(false);
     }
 
-    public async Task Delete(DateTime date)
+    public async Task Delete(DateTime date, Person person)
     {
-        var d = await GetByDate(date);
+        var d = await GetByDateAndPerson(date, person);
         if (d != null)
         {
             d.Visible = false;
@@ -38,9 +38,9 @@ public class DailyStatusService : IDailyStatusService
         await _statusRepository.Save(toSave).ConfigureAwait(false);
     }
 
-    public async Task AddBiometrics(Biometrics bio)
+    public async Task AddBiometrics(Biometrics bio, Person person)
     {
-        var d = await GetByDate(bio.DateReading).ConfigureAwait(false);
+        var d = await GetByDateAndPerson(bio.DateReading, person).ConfigureAwait(false);
         d ??= new DailyStatus
         {
             Date = bio.DateReading,
@@ -51,9 +51,9 @@ public class DailyStatusService : IDailyStatusService
         await Save(d).ConfigureAwait(false);
     }
 
-    public async Task DeleteBiometrics(string bioId, DateTime date)
+    public async Task DeleteBiometrics(string bioId, DateTime date, Person person)
     {
-        var d = await GetByDate(date).ConfigureAwait(false);
+        var d = await GetByDateAndPerson(date, person).ConfigureAwait(false);
         if (d != null && d.Biometrics != null && d.Biometrics.Any(b => b.Id == bioId))
         {
             d.Biometrics.Remove(d.Biometrics.Where(b => b.Id == bioId).First());
@@ -61,7 +61,7 @@ public class DailyStatusService : IDailyStatusService
         }
     }
 
-    public async Task<List<Biometrics>> GetBiometricsBetweenDate(DateTime startDate, DateTime endDate, BiometricsType bioType)
+    public async Task<List<Biometrics>> GetBiometricsBetweenDate(Person person, DateTime startDate, DateTime endDate, BiometricsType bioType)
     {
         var res = new List<Biometrics>();
         var dailyStatuses = await GetBetweenDate(startDate, endDate).ConfigureAwait(false);

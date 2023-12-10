@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace CalendarioVale.Data.Model;
 
-public class Biometrics
+public class Biometrics : BaseModel
 {
     [Key]
     [JsonPropertyName("id")]

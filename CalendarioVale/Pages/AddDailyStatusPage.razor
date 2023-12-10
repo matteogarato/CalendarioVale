@@ -1,14 +1,16 @@
 ﻿@attribute [Authorize]
 @inject DialogService DialogService
 @inject NavigationManager NavigationManager
+@inject IDailyStatusService DailyStatusService
+@inject IPersonService PersonService
 
 <RadzenTemplateForm TItem="DailyStatus" Data="@model" Submit=@OnSubmit>
     <div class="row">
         <div class="col-md-3">
-            <RadzenLabel Text="Va a Lavoro" />
+            <RadzenLabel Text="Persona" />
         </div>
         <div class="col">
-
+            <RadzenDropDown TValue="string" AllowVirtualization="true" AllowFiltering="true" Data=@persons TextProperty="FullName" ValueProperty="Id" />
         </div>
     </div>
     <div class="row">
@@ -45,8 +47,12 @@
 @code {
     [Parameter]
     public DateTime Date { get; set; }
-
+    IEnumerable<Person> persons;
     DailyStatus model = new DailyStatus();
+    protected override void OnInitialized()
+    {
+        persons = PersonService.GetAllPerson();
+    }
 
     protected override void OnParametersSet()
     {

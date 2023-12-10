@@ -5,8 +5,9 @@
 
 <PageTitle>Presenze Mensili</PageTitle>
 
-<RadzenScheduler @ref=@scheduler LoadData="@OnLoadData" SlotRender=@OnSlotRender style="height: 768px;" TItem="DailyStatus" Data=@appointment
-                 TextProperty="Note" StartProperty="Date" EndProperty="Date" SelectedIndex="2" SlotSelect=@OnSlotSelect AppointmentSelect=@OnDailyStatusSelect>
+<RadzenScheduler @ref=@scheduler LoadData="@OnLoadData" SlotRender=@OnSlotRender style="height: 768px;"
+    TItem="DailyStatus" Data=@appointment TextProperty="Note" StartProperty="Date" EndProperty="Date" SelectedIndex="2"
+    SlotSelect=@OnSlotSelect AppointmentSelect=@OnDailyStatusSelect>
     <RadzenDayView />
     <RadzenWeekView />
     <RadzenMonthView />
@@ -29,7 +30,7 @@
     async Task OnLoadData(SchedulerLoadDataEventArgs args)
     {
         // Get the appointments for between the Start and End
-        appointment = await DailyStatusService.GetBetweenDate(args.Start, args.End);
+        appointment = await DailyStatusService.GetBetweenDate(args.Start, args.End, null);
     }
 
     async Task OnSlotSelect(SchedulerSlotSelectEventArgs args)
@@ -38,7 +39,7 @@
         if (args.View.Text != "Year")
         {
             var data = await DialogService.OpenAsync<AddDailyStatusPage>("Aggiunta Data",
-                new Dictionary<string, object> { { "Date", args.Start } });
+            new Dictionary<string, object> { { "Date", args.Start } });
 
             if (data != null)
             {
@@ -53,7 +54,8 @@
     async Task OnDailyStatusSelect(SchedulerAppointmentSelectEventArgs<DailyStatus> args)
     {
 
-        var data = await DialogService.OpenAsync<EditDailyStatusPage>("Modifica Data", new Dictionary<string, object> { { "Appointment", args.Data } });
+        var data = await DialogService.OpenAsync<EditDailyStatusPage>("Modifica Data", new Dictionary<string, object> { {
+"Appointment", args.Data } });
         if (data != null)
         {
             await DailyStatusService.Save(data);

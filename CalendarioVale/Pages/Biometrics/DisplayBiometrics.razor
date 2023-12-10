@@ -1,9 +1,18 @@
 ﻿@page "/DisplayBiometrics"
 @attribute [Authorize]
 @inject IDailyStatusService DailyStatusService
+@inject IPersonService PersonService
 
 <RadzenTemplateForm TItem="List<Biometrics>" Data="@model">
     <div class="container">
+        <div class="row">
+        <div class="col-md-3">
+            <RadzenLabel Text="Persona" />
+        </div>
+        <div class="col">
+            <RadzenDropDown TValue="string" AllowVirtualization="true" AllowFiltering="true" Data=@persons TextProperty="FullName" ValueProperty="Id" />
+        </div>
+    </div>
         <div class="row">
             <div class="col-md-2">
                 <RadzenLabel Text="Tipo Di Dato" />
@@ -44,6 +53,8 @@
 </RadzenTemplateForm>
 @code {
     public BiometricsType type { get; set; }
+    public Person person { get; set; }
+    IEnumerable<Person> persons;
     List<Biometrics> model = new List<Biometrics>();
     public DateTime startDate { get; set; }
     public DateTime endDate { get; set; }
@@ -52,14 +63,15 @@
     {
         startDate = DateTime.Today.AddDays(-1);
         endDate = DateTime.Today.AddHours(23).AddMinutes(59);
-        model = await DailyStatusService.GetBiometricsBetweenDate(startDate, endDate, type);
+        persons = PersonService.GetAllPerson();
+        model = await DailyStatusService.GetBiometricsBetweenDate(person,startDate, endDate, type);
     }
     async Task OnChange(DateTime? value)
     {
-        model = await DailyStatusService.GetBiometricsBetweenDate(startDate, endDate, type);
+        model = await DailyStatusService.GetBiometricsBetweenDate(person,startDate, endDate, type);
     }
     async Task OnChange(object value)
     {
-        model = await DailyStatusService.GetBiometricsBetweenDate(startDate, endDate, type);
+        model = await DailyStatusService.GetBiometricsBetweenDate(person,startDate, endDate, type);
     }
 }

@@ -18,4 +18,6 @@ public class ApplicationDbContext : IdentityDbContext
     }
 
     public DbSet<DailyStatus> DailyStatuses { get; set; }
+
+    public DbSet<Person> Persons { get; set; }
 }
