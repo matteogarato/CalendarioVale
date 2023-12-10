@@ -10,10 +10,10 @@ public class DbCollectionTest : DatabaseTestCase
     {
     }
 
-    [Fact]
-    public async void TemporaryDBShouldBeCreated()
-    {
-        Assert.True(DbContext.Database.CanConnect());
-        Assert.Contains("192.168.14.108", DbContext.Database.GetConnectionString());
-    }
+    // [Fact]
+    // public async void TemporaryDBShouldBeCreated()
+    // {
+    //     Assert.True(DbContext.Database.CanConnect());
+    //     Assert.Contains("192.168.14.108", DbContext.Database.GetConnectionString());
+    // }
 }

@@ -19,26 +19,27 @@ public class DailyStatusServiceTests
     [Fact]
     public async void GetByDateShouldReturn()
     {
-        _mockIDailyStatusRepository.Setup(x => x.GetByDate(It.IsAny<DateTime>())).ReturnsAsync(
-            new DailyStatus()
-            {
-                Date = DateTime.Now,
-                Note = "good day",
-                Modify = DateTime.Now,
-                Visible = true,
-            });
-
-        var res = await _service.GetByDate(DateTime.Today);
+        var testDailyStatus = new DailyStatus()
+        {
+            Date = DateTime.Now,
+            Note = "good day",
+            Modify = DateTime.Now,
+            Visible = true,
+        };
+        _mockIDailyStatusRepository.Setup(x => x.GetByDateAndPerson(It.IsAny<DateTime>(), It.IsAny<Person>())).ReturnsAsync(
+            testDailyStatus);
+        var person = new Person(Guid.NewGuid().ToString(), "name", "person", DateTime.Today);
+        var res = await _service.GetByDateAndPerson(DateTime.Today, person);
 
         Assert.NotNull(res);
-        Assert.Equal(DateTime.Today, res.Date);
+        Assert.Equal(testDailyStatus.Note, res.Note);
         Assert.True(res.Visible);
     }
 
     [Fact]
     public async void GetBetweenDateShouldReturn()
     {
-        _mockIDailyStatusRepository.Setup(x => x.GetBetweenDate(It.IsAny<DateTime>(), It.IsAny<DateTime>())).Returns(
+        _mockIDailyStatusRepository.Setup(x => x.GetBetweenDate(It.IsAny<DateTime>(), It.IsAny<DateTime>(), It.IsAny<Person>())).Returns(
             new List<DailyStatus>()
             {
                 new()
