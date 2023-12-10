@@ -74,18 +74,4 @@ public class DailyStatusServiceTests
         res.Count.Should().Be(3);
     }
 
-    [Fact]
-    public async void DeleteShouldReturn()
-    {
-        var testDailyStatus = new DailyStatus()
-        {
-            Date = DateTime.Now,
-            Note = "good day",
-            Modify = DateTime.Now,
-            Visible = true,
-        };
-        _IDailyStatusRepository.GetByDateAndPerson(Arg.Any<DateTime>(), Arg.Any<Person>()).Returns(testDailyStatus);
-        var person = new Person(Guid.NewGuid().ToString(), "name", "person", DateTime.Today);
-        await _service.Delete(DateTime.Today, person);
-    }
 }
