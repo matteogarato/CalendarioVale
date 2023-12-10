@@ -1,6 +1,7 @@
-using CalendarioVale.Data.Model;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+
+using CalendarioVale.Data.Model;
 
 namespace CalendarioVale.Data;
 

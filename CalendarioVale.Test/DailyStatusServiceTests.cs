@@ -1,19 +1,22 @@
 ﻿using CalendarioVale.Data.Model;
 using CalendarioVale.Data.Reposotory;
 using CalendarioVale.Services;
-using Moq;
+
+using FluentAssertions;
+
+using NSubstitute;
 
 namespace CalendarioVale.Test;
 
 public class DailyStatusServiceTests
 {
     private readonly IDailyStatusService _service;
-    private Mock<IDailyStatusRepository> _mockIDailyStatusRepository;
+    private IDailyStatusRepository _IDailyStatusRepository;
 
     public DailyStatusServiceTests()
     {
-        _mockIDailyStatusRepository = new Mock<IDailyStatusRepository>();
-        _service = new DailyStatusService(_mockIDailyStatusRepository.Object);
+        _IDailyStatusRepository = Substitute.For<IDailyStatusRepository>();
+        _service = new DailyStatusService(_IDailyStatusRepository);
     }
 
     [Fact]
@@ -26,20 +29,19 @@ public class DailyStatusServiceTests
             Modify = DateTime.Now,
             Visible = true,
         };
-        _mockIDailyStatusRepository.Setup(x => x.GetByDateAndPerson(It.IsAny<DateTime>(), It.IsAny<Person>())).ReturnsAsync(
-            testDailyStatus);
+        _IDailyStatusRepository.GetByDateAndPerson(Arg.Any<DateTime>(), Arg.Any<Person>()).Returns(testDailyStatus);
         var person = new Person(Guid.NewGuid().ToString(), "name", "person", DateTime.Today);
         var res = await _service.GetByDateAndPerson(DateTime.Today, person);
 
-        Assert.NotNull(res);
-        Assert.Equal(testDailyStatus.Note, res.Note);
-        Assert.True(res.Visible);
+        res.Should().NotBeNull();
+        res.Visible.Should().BeTrue();
+        res.Note.Should().Be(testDailyStatus.Note);
     }
 
     [Fact]
     public async void GetBetweenDateShouldReturn()
     {
-        _mockIDailyStatusRepository.Setup(x => x.GetBetweenDate(It.IsAny<DateTime>(), It.IsAny<DateTime>(), It.IsAny<Person>())).Returns(
+        var testDailyStatusList =
             new List<DailyStatus>()
             {
                 new()
@@ -63,17 +65,27 @@ public class DailyStatusServiceTests
                     Modify = DateTime.Now,
                     Visible = true,
                 }
-            }.ToAsyncEnumerable()
-       );
+            }.ToAsyncEnumerable();
+        _IDailyStatusRepository.GetBetweenDate(Arg.Any<DateTime>(), Arg.Any<DateTime>(), Arg.Any<Person>()).Returns(testDailyStatusList);
 
         var res = await _service.GetBetweenDate(DateTime.Today, DateTime.Today.AddDays(1));
 
-        Assert.NotNull(res);
-        Assert.Equal(3, res.Count);
+        res.Should().NotBeNull();
+        res.Count.Should().Be(3);
     }
 
     [Fact]
-    public void SaveShouldBeOK()
+    public async void DeleteShouldReturn()
     {
+        var testDailyStatus = new DailyStatus()
+        {
+            Date = DateTime.Now,
+            Note = "good day",
+            Modify = DateTime.Now,
+            Visible = true,
+        };
+        _IDailyStatusRepository.GetByDateAndPerson(Arg.Any<DateTime>(), Arg.Any<Person>()).Returns(testDailyStatus);
+        var person = new Person(Guid.NewGuid().ToString(), "name", "person", DateTime.Today);
+        await _service.Delete(DateTime.Today, person);
     }
 }

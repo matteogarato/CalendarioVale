@@ -1,5 +1,6 @@
-﻿using CalendarioVale.Data.Model;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+
+using CalendarioVale.Data.Model;
 
 namespace CalendarioVale.Data.Reposotory;
 
