@@ -18,6 +18,7 @@ public class Person : BaseModel
             return $"{Name} {Surname}";
         }
     }
+
     public Person(string id, string name, string surname, DateTime birthDate)
     {
         this.Id = id;

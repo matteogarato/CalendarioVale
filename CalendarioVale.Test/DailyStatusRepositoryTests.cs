@@ -1,4 +1,3 @@
-using CalendarioVale.Data.Model;
 using CalendarioVale.Data.Reposotory;
 using CalendarioVale.Test.Data;
 

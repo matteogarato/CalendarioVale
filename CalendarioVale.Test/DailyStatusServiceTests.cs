@@ -73,5 +73,4 @@ public class DailyStatusServiceTests
         res.Should().NotBeNull();
         res.Count.Should().Be(3);
     }
-
 }

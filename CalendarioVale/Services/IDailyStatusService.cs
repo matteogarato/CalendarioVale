@@ -17,5 +17,4 @@ public interface IDailyStatusService
     public Task AddBiometrics(Biometrics bio, Person person);
 
     public Task DeleteBiometrics(string bioId, DateTime date, Person person);
-
 }

@@ -1,6 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-using CalendarioVale.Data.Model;
+﻿using CalendarioVale.Data.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace CalendarioVale.Data.Reposotory;
 
@@ -20,7 +19,6 @@ public class DailyStatusRepository : IDailyStatusRepository
 
     public IAsyncEnumerable<DailyStatus> GetBetweenDate(DateTime startDate, DateTime endDate, Person person = null)
     {
-
         return person == null ? GetBetweenDateCompiled(_context, startDate, endDate) : GetBetweenDateAndPersonCompiled(_context, startDate, endDate, person);
     }
 

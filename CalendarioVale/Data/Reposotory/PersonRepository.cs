@@ -1,6 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-using CalendarioVale.Data.Model;
+﻿using CalendarioVale.Data.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace CalendarioVale.Data.Reposotory;
 
@@ -29,7 +28,6 @@ public class PersonRepository : IPersonRepository
                 dbPerson.Surname = toSave.Surname;
                 dbPerson.BirthDate = toSave.BirthDate;
                 dbPerson.EditDate = DateTime.Now;
-
             }
             else
             {
@@ -49,5 +47,4 @@ public class PersonRepository : IPersonRepository
    EF.CompileAsyncQuery(
         (ApplicationDbContext context, string id) =>
            context.Set<Person>().FirstOrDefault(p => p.Id == id));
-
 }

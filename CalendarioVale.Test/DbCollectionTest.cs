@@ -1,5 +1,4 @@
 ﻿using CalendarioVale.Test.Data;
-using Microsoft.EntityFrameworkCore;
 
 namespace CalendarioVale.Test;
 

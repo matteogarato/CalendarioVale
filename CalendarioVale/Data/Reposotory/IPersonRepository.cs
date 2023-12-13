@@ -7,5 +7,6 @@ public interface IPersonRepository
     Task<Person?> GetById(string id);
 
     Task Save(Person toSave);
+
     IEnumerable<Person> GetAllPerson();
 }
